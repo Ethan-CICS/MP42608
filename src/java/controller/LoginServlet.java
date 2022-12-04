@@ -48,11 +48,11 @@ public class LoginServlet extends HttpServlet {
                 System.out.print(session.getAttribute("newUsername"));
             }
             else {
-                response.sendRedirect("index.html");
+                response.sendRedirect("index.jsp");
             }
         }
         catch(NullPointerException npe) {
-             response.sendRedirect("index.html");
+             response.sendRedirect("index.jsp");
         }
     }
 }
