@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 4)
+        ),
+        url("../images/SoundproofBGDark.png");
+    background-size: 100px;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 1.15;
+}
+
+h1 {
+    font-family: 'Marvelan', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: 60px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-page {
+    flex: 0 0 auto;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -300px;
+}
+#main-title {
+    font-family: Sulphur Point;
+    margin-left: 175px;
+}
+.products {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 25px;
+    zoom: 90%;
+}
+.keyboard-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+#keyboard-container {
+    width: 340px;
+    height: 340px;
+}
+.product-k1 {
+    flex: 0 0 auto;
+    display: flex;
+    z-index: 3;
+    align-items: center;
+    margin-left: 200px;
+    border-radius: 15%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff4bb;
+}
+.product-k2, .product-k3, .product-k4 {
+    flex: 0 0 auto;
+    display: flex;
+    z-index: 3;
+    align-items: center;
+    margin-left: 50px;
+    border-radius: 15%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff4bb;
+}
+.products-SMALL {
+    flex: 0 0 auto;
+    width: 100%;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 25px;
+    margin-left: 150px;
+    zoom: 90%;
+}
+.product-k3-SMALL, .product-k4-SMALL {
+    flex: 0 0 auto;
+    display: flex;
+    z-index: 3;
+    align-items: center;
+    margin-left: 50px;
+    border-radius: 15%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff4bb;
+}
+@media(max-width: 1600px) {
+    #main-title {
+        display: none;
+    }
+    .products {
+        margin-top: 400px;
+    }
+    #keyboard-container {
+        width: 300px;
+        height: 300px;
+    }
+    .product-k3, .product-k4 {
+        display: none;
+    }
+    .products-SMALL {
+        display: flex;
+        margin-top: 40px;
+    }
+}
+@media(max-width: 1500px) {
+    #keyboard-container {
+        width: 230px;
+        height: 230px;
+    }
+}
+@media(max-width: 1200px) {
+    #keyboard-container {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media(max-width: 1000px) {
+    #keyboard-container {
+        width: 170px;
+        height: 170px;
+    }
+}
+@media(max-width: 767px) {
+    #keyboard-container {
+        width: 100px;
+        height: 100px;
+    }
+    .product-k1, .product-k3-SMALL, .products-SMALL {
+        margin-left: 0;
+    }
+}
+@media(max-width: 479px) {
+    #keyboard-container {
+        width: 50px;
+        height: 50px;
+    }
+}

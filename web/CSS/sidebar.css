@@ -1,0 +1,67 @@
+.sidebar {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 175px;
+    bottom: 0px;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    align-items: flex-start;
+    border-color: #ffe6bf;
+    border-width: 2px;
+    flex-direction: column;
+    background-color: #252524;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+}
+#sidebutton {
+    color: #6d6857;
+    position: absolute;
+    font-size: 20px;
+    font-style: normal;
+    font-family: Sulphur Point;
+    font-weight: 400;
+    margin-left: 20px;
+}
+#sidebutton-highlight {
+    color: #ffe6bf;
+    position: absolute;
+    font-size: 20px;
+    font-style: normal;
+    font-family: Sulphur Point;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.guitar {
+    top: 130px;
+    left: 0px;
+}
+.bass-guitar {
+    top: 180px;
+    left: 0px;
+}
+.drums {
+    top: 230px;
+    left: 0px;
+}
+.keyboards {
+    top: 280px;
+    left: 0px;
+}
+.amplifiers {
+    top: 330px;
+    left: 0px;
+}
+.accessories {
+    top: 380px;
+    left: 0px;
+}
+
+@media(max-width: 767px) {
+    .sidebar {
+      display: none;
+  }
+}
