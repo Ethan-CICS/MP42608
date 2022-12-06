@@ -39,7 +39,7 @@
                 <h1 id="main-title">Guitars</h1>
                 <div class="products">
                     <div class="product1" id="product-container">
-                        <a href="item-g1.jsp">
+                        <a href="item-g1.jsp" >
                         <img
                             alt="whitestrat"
                             src="images/1-guitar/g1.png"

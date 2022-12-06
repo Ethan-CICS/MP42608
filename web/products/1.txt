@@ -1,0 +1,9 @@
+Stratocaster
+5
+12
+120
+This is a guitar
+https://www.freeiconspng.com/uploads/white-star-icon-13.png
+12000
+Guitar
+images/1-guitar/g1.png
