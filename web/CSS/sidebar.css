@@ -35,28 +35,41 @@
     font-weight: 400;
     margin-left: 20px;
 }
+
+a { color: #6d6857; text-decoration: none }
+a:active { color: #ffe6bf; text-decoration: none }
+a:visited {
+    color:#6d6857;
+    outline: none;
+    text-decoration: none
+}
+
 .guitar {
-    top: 130px;
-    left: 0px;
+    margin-top: 130px;
+    margin-left: 20px;
+}
+.bass-guitar, .drums, .keyboards, .amplifiers, .accessories {
+    margin-top: 25px;
+    margin-left: 20px;
 }
 .bass-guitar {
-    top: 180px;
+    top: 150px;
     left: 0px;
 }
 .drums {
-    top: 230px;
+    top: 200px;
     left: 0px;
 }
 .keyboards {
-    top: 280px;
+    top: 250px;
     left: 0px;
 }
 .amplifiers {
-    top: 330px;
+    top: 300px;
     left: 0px;
 }
 .accessories {
-    top: 380px;
+    top: 350px;
     left: 0px;
 }
 

@@ -13,10 +13,10 @@
             <nav>
                 <img src="images/navbar/ApolloLogo.png" class="logo">
                 <ul class="nav-links">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Login</a></li>
+                    <li><a href="index.jsp">Home</a></li>
+                    <li><a href="about-us.jsp">About Us</a></li>
+                    <li><a href="products-main.jsp">Products</a></li>
+                    <li><a href="login.jsp">Login</a></li>
                 </ul>
                 <form>
                     <img src="images/navbar/SearchIcon.png" class="searchIcon">
@@ -27,7 +27,9 @@
         </header>
         <div class="greetingBanner">
             <h1>Welcome to Apollo!</h1>
-            <button type="submit" class="button-design">SHOP NOW</button>
+            <div class="button-container">
+                <button type="submit" class="button-design">SHOP NOW</button>
+            </div>
         </div>
     </body>
 </html>
