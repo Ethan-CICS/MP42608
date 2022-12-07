@@ -18,12 +18,12 @@
         <div class="main-body">
           <h1>Login</h1>
           <div class="container2">
-            <form action="LoginServlet" method="get">
+            <form action="Login">
                 <label for="username" class="login-title">Username</label>
-                <input type="text" name="user" class="login-form"/><br/><br/>
+                <input type="text" name="username" class="login-form"/><br/><br/>
                 
                 <label for="password" class="login-title"> Password </label>
-                <input type="password" name="pass" class="login-form"></input><br/><br/>
+                <input type="password" name="password" class="login-form"><br/><br/>
                 <div class="button-container">
                 <input class="button-design" type="submit" value="LOGIN">
                 </div>

@@ -60,6 +60,11 @@ public class Product {
     public String getThumb() {
         return this.thumbnail;
     }
+    
+    public void addStock(int sold) {
+        this.stock += sold; 
+    }
+    
     @Override
     public String toString() {
         return "Model: " + getModel() + "\nRating: " + getRating() + "\nReviews: " + getReviews() + "\nStock: " + getStock() + "\nDesc: " + getDesc() + "\nImage link: " + getImage() + "\nPrice: " + getPrice() + "\nType: " + getType();

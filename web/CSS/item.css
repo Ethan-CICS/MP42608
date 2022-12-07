@@ -131,7 +131,7 @@ h1 {
     margin-right: 70px;
 }
 .item-review {
-    margin-left: -500px;
+    margin-left: -400px;
 }
 .item-sold, .item-sold-SMALL {
     color: white;
@@ -186,7 +186,8 @@ h1 {
         margin-right: 50px;
     }
     .store-product-product {
-        width: 600px;
+        width: 300px;
+        height: 300px;
     }
     .item-info, .store-product-info {
         width: auto;
@@ -257,7 +258,7 @@ h1 {
         margin-left: 0px;
     }
     .item-title-SMALL {
-        font-size: 30px;
+        font-size: 24px;
     }
     .item-star-text-SMALL {
         color: white;

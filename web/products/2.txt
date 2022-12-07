@@ -1,9 +1,9 @@
-THBB10
+Ibanez THBB10
 4.5
 50
 76
-This is a guitar
-https://www.freeiconspng.com/uploads/white-star-icon-13.png
+images/1-guitar/product-g2.png
 346234.00
 Guitar
 images/1-guitar/g2.png
+This is a guitar
