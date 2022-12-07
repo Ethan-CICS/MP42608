@@ -1,9 +1,11 @@
-Stratocaster
+Fender Stratocaster
 5
 12
 120
-This is a guitar
 images/1-guitar/product-g1.png
 12000
 Guitar
 images/1-guitar/g1.png
+This is a guitar
+
+For gamers

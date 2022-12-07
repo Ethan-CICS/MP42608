@@ -44,15 +44,15 @@ public class LoginServlet extends HttpServlet {
             if(userLogin.get(username).equals(password)) {
                 HttpSession session = request.getSession();
                 session.setAttribute("newUsername",username);
-                response.sendRedirect("welcome.jsp");
+                response.sendRedirect("index.jsp");
                 System.out.print(session.getAttribute("newUsername"));
             }
             else {
-                response.sendRedirect("index.jsp");
+                response.sendRedirect("login.jsp");
             }
         }
         catch(NullPointerException npe) {
-             response.sendRedirect("index.jsp");
+             response.sendRedirect("login.jsp");
         }
     }
 }

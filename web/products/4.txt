@@ -1,0 +1,9 @@
+Martin & Co. 0128-28
+4.5
+50
+76
+images/1-guitar/product-g4.png
+346234.00
+Guitar
+images/1-guitar/g4.png
+This is a guitar
