@@ -63,7 +63,7 @@
                                 j++;
                                 if(j == 3 || j == 4) {
                                     out.println("<div class=\"product" + j + "-SMALL\" id=\"product-container\">");
-                                    out.println("<a href=\"blank error\">");
+                                    out.println("<a href=\"item.jsp?id=" + i + "\">");
                                     out.println("<img alt=\"telecaster\" src=\"" + inst.getThumb() + "\" class=\"product-image\"/></a>");
                                     out.println("</div>");
                                 }

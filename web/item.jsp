@@ -58,7 +58,7 @@
                     out.println("<span class=\"item-review-SMALL\">" + item.getReviews() + "</span>");
                     out.println("<span class=\"item-sold-SMALL\">" + item.getStock() + "</span>");
                     out.println("</div>");
-                    out.println("<span class=\"item-price-SMALL\">" + String.format("%.2f", item.getPrice()) + "</span>");
+                    out.println("<span class=\"item-price-SMALL\">" + String.format("%,.2f", item.getPrice()) + "</span>");
                     %>
                         <div class="item-buttton-container-SMALL">
                             <div class="item-button-SMALL">
@@ -78,7 +78,7 @@
                         out.println("<span class=\"item-review\">" + item.getReviews() + " Reviews</span>");
                         out.println("<span class=\"item-sold\">"+ item.getStock() + " Sold</span>");
                         out.println("</div>");
-                        out.println("<span class=\"item-price\">PHP " + String.format("%.2f", item.getPrice()) + "</span>");
+                        out.println("<span class=\"item-price\">PHP " + String.format("%,.2f", item.getPrice()) + "</span>");
                         out.println("<span class=\"store-product-desc\">" + item.getDesc() + "</span>");
                         out.println("<br />");
                     %>
