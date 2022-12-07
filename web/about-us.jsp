@@ -14,22 +14,7 @@
         <link href="https://fonts.cdnfonts.com/css/marvelan" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <nav>
-                <img src="images/navbar/ApolloLogo.png" class="logo">
-                <ul class="nav-links">
-                    <li><a href="index.jsp">Home</a></li>
-                    <li><a href="about-us.jsp">About Us</a></li>
-                    <li><a href="products-main.jsp">Products</a></li>
-                    <li><a href="login.jsp">Login</a></li>
-                </ul>
-                <form>
-                    <img src="images/navbar/SearchIcon.png" class="searchIcon">
-                    <input type="text" placeholder="Search" class="searchBar">
-                    <input type="button" hidden />
-                </form>
-            </nav>
-        </header>
+        <%@include file="navbar.jsp" %>
         <h1>About Us</h1>
         <div class="container">
             <div class="profiles">
