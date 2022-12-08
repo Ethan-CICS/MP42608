@@ -23,62 +23,38 @@
             <div class="main-page">
                 <h1 id="main-title">Drums</h1>
                 <div class="products">
-                    <div class="product1" id="product-container">
-                        <a href="item-d1.jsp">
-                        <img
-                            alt="pearlsnare"
-                            src="images/3-drums/d1.png"
-                            class="product-image"
-                        />
-                        </a>
-                    </div>
-                    <div class="product2" id="product-container">
-                        <a href="blank error">
-                        <img
-                            alt="dwkickdrum"
-                            src="images/3-drums/d2.png"
-                            class="product-image"
-                        />
-                        </a>
-                    </div>
-                    <div class="product3" id="product-container">
-                        <a href="blank error">
-                        <img
-                            alt="tamatomtoms"
-                            src="images/3-drums/d3.png"
-                            class="product-image"
-                        />
-                        </a>
-                    </div>
-                    <div class="product4" id="product-container">
-                        <a href="blank error">
-                        <img
-                            alt="pdpfloortom"
-                            src="images/3-drums/d4.png"
-                            class="product-image"
-                        />
-                        </a>
-                    </div>
+                <%@page import="java.util.*"%>
+                <%@page import="model.Product"%>
+                <% 
+                    int products = 0;
+                    List<Product> productList = (ArrayList)request.getServletContext().getAttribute("productList");
+                    products = productList.size();
+                    for(int i = 0, j = 0; i < products; i++) {
+                        Product inst = productList.get(i);
+                        if(inst.getType().equals("Drums")) {
+                            j++;
+                            out.println("<div class=\"product" + Integer.toString(j) + "\" id=\"product-container\">");
+                            out.println("<a href=\"item.jsp?id=" + i + "\"> <img alt=\"guitar\" src= \"" + inst.getThumb() + " \"class=\"product-image\"/></a>");
+                            out.println("</div>");
+                        }
+                    }
+                %>
                 </div>
                 <div class="products-SMALL">
-                    <div class="product3-SMALL" id="product-container">
-                        <a href="blank error">
-                        <img
-                            alt="tamatomtoms"
-                            src="images/3-drums/d3.png"
-                            class="product-image"
-                        />
-                        </a>
-                    </div>
-                    <div class="product4-SMALL" id="product-container">
-                        <a href="blank error">
-                        <img
-                            alt="pdpfloortom"
-                            src="images/3-drums/d4.png"
-                            class="product-image"
-                        />
-                        </a>
-                    </div>
+                    <%
+                        for(int i = 0, j = 0; i < products; i++) {
+                            Product inst = productList.get(i);
+                            if(inst.getType().equals("Drums")) {
+                                j++;
+                                if(j == 3 || j == 4) {
+                                    out.println("<div class=\"product" + j + "-SMALL\" id=\"product-container\">");
+                                    out.println("<a href=\"blank error\">");
+                                    out.println("<img alt=\"telecaster\" src=\"" + inst.getThumb() + "\" class=\"product-image\"/></a>");
+                                    out.println("</div>");
+                                }
+                            }
+                        }
+                    %>
                 </div>
             </div>
         </div>

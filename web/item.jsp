@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <%@page import="java.util.*"%>
+        <%@page import="model.*;"%>
+        <% 
+            int index = Integer.parseInt(request.getParameter("id"));
+            List<Product> productList = (ArrayList)request.getServletContext().getAttribute("productList");
+            Product item = productList.get(index);
+        %>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Product | Apollo Music Store</title>
+        <% out.println("<title>"+ item.getModel() +" | Apollo Music Store</title>"); %>
         <link rel="icon" type="image/x-icon" href="images/ApolloLogoOnly.png"/>
         <link href="CSS/item.css" rel="stylesheet"/>
         <link href="CSS/navbar.css" rel="stylesheet"/>
         <link href="CSS/sidebar.css" rel="stylesheet"/>
     </head>
     <body>
-        <%@page import="java.util.*"%>
-        <%@page import="model.*;"%>
-        
         <%@include file="navbar.jsp" %>
         <div class="content">
             <div class="sidebar">
@@ -25,15 +29,8 @@
             </div>
             <div class="main-page">
                 <div class="item-info-SMALL">
-                    <% 
-                        int index = Integer.parseInt(request.getParameter("id"));
-                        List<Product> productList = (ArrayList)request.getServletContext().getAttribute("productList");
-                        Product item = productList.get(index);
-                        for(int x = 0; x == 0;x++) {
-                            out.println("<img alt=\"whitestrat\" src=\"" + item.getImage() + "\" class=\"store-product-product\"/>");
-                        }
-                    %>
                    <%
+                    out.println("<img alt=\"whitestrat\" src=\"" + item.getImage() + "\" class=\"store-product-product\"/>");
                     out.println("<div class=\"store-product-info\">");
                     out.println("<span class=\"item-title-SMALL\">" + item.getModel()+ "</span>");
                     out.println("<div class=\"item-feedback-SMALL\">");
