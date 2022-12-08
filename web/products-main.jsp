@@ -24,32 +24,40 @@
                 <h1 id="main-title">Products</h1>
                 <div class="products">
                     <div class="featured-container1">
+                        <a href="item.jsp?id=1">
                         <img
                             alt="timhensonguitar"
                             src="images/featured.png"
                             class="featured1"
                         />
+                        </a>
                     </div>
                     <div class="featured-container2">
+                        <a href="item.jsp?id=4">
                         <img
                             alt="joedartbass"
                             src="images/2-bass/b1.png"
                             class="featured2"
                             id="featuredRIGHT"
                         />
+                        </a>
+                        <a href="item.jsp?id=12">
                         <img
                             alt="rolandkeyboard"
                             src="images/4-keyboard/p1.png"
                             class="featured3"
                             id="featuredRIGHT"
                         />
+                        </a>
                     </div>
                     <div class="featured-container1-SMALL">
+                        <a href="item.jsp?id=1">
                         <img
                             alt="timhensonguitar-SMALL"
                             src="images/1-guitar/g2.png"
                             class="featured1-SMALL"
                         />
+                    </a>
                     </div>
                 </div>
             </div>

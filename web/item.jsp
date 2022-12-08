@@ -20,12 +20,46 @@
         <%@include file="navbar.jsp" %>
         <div class="content">
             <div class="sidebar">
-                <a href="products-guitar.jsp" class="guitar" id="sidebutton-highlight">Guitars</a>
-                <a href="products-bass.jsp" class="bass-guitar" id="sidebutton">Bass Guitars</a>
-                <a href="products-drums.jsp" class="drums" id="sidebutton">Drums</a>
-                <a href="products-keyboard.jsp" class="keyboards" id="sidebutton">Keyboards</a>
-                <a href="products-amps.jsp" class="amplifiers" id="sidebutton">Amplifiers</a>
-                <a href="" class="accessories" id="sidebutton">Accessories</a>
+                <%
+                    String type = item.getType();
+                    if(type.equals("Guitar")) {
+                            out.println("<a href=\"products-guitar.jsp\" class=\"guitar\" id=\"sidebutton-highlight\">Guitars</a>");
+                            out.println("<a href=\"products-bass.jsp\" class=\"bass-guitar\" id=\"sidebutton\">Bass Guitars</a>");
+                            out.println("<a href=\"products-drums.jsp\" class=\"drums\" id=\"sidebutton\">Drums</a>");
+                            out.println("<a href=\"products-keyboard.jsp\" class=\"keyboards\" id=\"sidebutton\">Keyboards</a>");
+                            out.println("<a href=\"products-amps.jsp\" class=\"amplifiers\" id=\"sidebutton\">Amplifiers</a>");
+                    }else if(type.equals("Bass")) {
+                            out.println("<a href=\"products-guitar.jsp\" class=\"guitar\" id=\"sidebutton\">Guitars</a>");
+                            out.println("<a href=\"products-bass.jsp\" class=\"bass-guitar\" id=\"sidebutton-highlight\">Bass Guitars</a>");
+                            out.println("<a href=\"products-drums.jsp\" class=\"drums\" id=\"sidebutton\">Drums</a>");
+                            out.println("<a href=\"products-keyboard.jsp\" class=\"keyboards\" id=\"sidebutton\">Keyboards</a>");
+                            out.println("<a href=\"products-amps.jsp\" class=\"amplifiers\" id=\"sidebutton\">Amplifiers</a>");
+                    }else if(type.equals("Drums")) {
+                            out.println("<a href=\"products-guitar.jsp\" class=\"guitar\" id=\"sidebutton\">Guitars</a>");
+                            out.println("<a href=\"products-bass.jsp\" class=\"bass-guitar\" id=\"sidebutton\">Bass Guitars</a>");
+                            out.println("<a href=\"products-drums.jsp\" class=\"drums\" id=\"sidebutton-highlight\">Drums</a>");
+                            out.println("<a href=\"products-keyboard.jsp\" class=\"keyboards\" id=\"sidebutton\">Keyboards</a>");
+                            out.println("<a href=\"products-amps.jsp\" class=\"amplifiers\" id=\"sidebutton\">Amplifiers</a>");
+                    }else if(type.equals("Keyboard")){
+                            out.println("<a href=\"products-guitar.jsp\" class=\"guitar\" id=\"sidebutton\">Guitars</a>");
+                            out.println("<a href=\"products-bass.jsp\" class=\"bass-guitar\" id=\"sidebutton\">Bass Guitars</a>");
+                            out.println("<a href=\"products-drums.jsp\" class=\"drums\" id=\"sidebutton\">Drums</a>");
+                            out.println("<a href=\"products-keyboard.jsp\" class=\"keyboards\" id=\"sidebutton-highlight\">Keyboards</a>");
+                            out.println("<a href=\"products-amps.jsp\" class=\"amplifiers\" id=\"sidebutton\">Amplifiers</a>");
+                    }else if(type.equals("Amplifier")) {
+                            out.println("<a href=\"products-guitar.jsp\" class=\"guitar\" id=\"sidebutton\">Guitars</a>");
+                            out.println("<a href=\"products-bass.jsp\" class=\"bass-guitar\" id=\"sidebutton\">Bass Guitars</a>");
+                            out.println("<a href=\"products-drums.jsp\" class=\"drums\" id=\"sidebutton\">Drums</a>");
+                            out.println("<a href=\"products-keyboard.jsp\" class=\"keyboards\" id=\"sidebutton\">Keyboards</a>");
+                            out.println("<a href=\"products-amps.jsp\" class=\"amplifiers\" id=\"sidebutton-highlight\">Amplifiers</a>");
+                    } else {
+                            out.println("<a href=\"products-guitar.jsp\" class=\"guitar\" id=\"sidebutton\">Guitars</a>");
+                            out.println("<a href=\"products-bass.jsp\" class=\"bass-guitar\" id=\"sidebutton\">Bass Guitars</a>");
+                            out.println("<a href=\"products-drums.jsp\" class=\"drums\" id=\"sidebutton\">Drums</a>");
+                            out.println("<a href=\"products-keyboard.jsp\" class=\"keyboards\" id=\"sidebutton\">Keyboards</a>");
+                            out.println("<a href=\"products-amps.jsp\" class=\"amplifiers\" id=\"sidebutton\">Amplifiers</a>");
+                    }
+                %>
             </div>
             <div class="main-page">
                 <div class="item-info-SMALL">
