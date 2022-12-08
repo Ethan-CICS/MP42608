@@ -201,8 +201,8 @@ h1 {
         margin-left: 100px;
     }
     .store-product-product {
-        width: 300px;
-        height: 300px;
+        width: 240px;
+        height: 220px;
     }
     .store-product-info {
         height: auto;
@@ -213,7 +213,7 @@ h1 {
         justify-content: flex-start;
     }
     .item-title-SMALL {
-        font-size: 70px;
+        font-size: 28px;
         align-self: center;
     }
     .item-feedback-SMALL {

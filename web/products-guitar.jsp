@@ -10,22 +10,7 @@
         <link href="CSS/sidebar.css" rel="stylesheet"/>
     </head>
     <body>
-        <header>
-            <nav>
-                <img src="images/navbar/ApolloLogo.png" class="logo">
-                <ul class="nav-links">
-                    <li><a href="index.jsp">Home</a></li>
-                    <li><a href="about-us.jsp">About Us</a></li>
-                    <li><a href="products-main.jsp">Products</a></li>
-                    <li><a href="login.jsp">Login</a></li>
-                </ul>
-                <form>
-                    <img src="images/navbar/SearchIcon.png" class="searchIcon">
-                    <input type="text" placeholder="Search" class="searchBar">
-                    <input type="button" hidden />
-                    </form>
-            </nav>
-        </header>
+        <%@include file="navbar.jsp" %>
         <div class="content">
             <div class="sidebar">
                 <a href="products-guitar.jsp" class="guitar" id="sidebutton-highlight">Guitars</a>
@@ -63,7 +48,7 @@
                                 j++;
                                 if(j == 3 || j == 4) {
                                     out.println("<div class=\"product" + j + "-SMALL\" id=\"product-container\">");
-                                    out.println("<a href=\"blank error\">");
+                                    out.println("<a href=\"item.jsp?id=" + i + "\">");
                                     out.println("<img alt=\"telecaster\" src=\"" + inst.getThumb() + "\" class=\"product-image\"/></a>");
                                     out.println("</div>");
                                 }

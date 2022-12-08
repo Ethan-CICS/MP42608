@@ -1,9 +1,27 @@
 Ernie Ball Joe Dart II
-4.5
-50
-76
+5
+23
+186
 images/2-bass/product-b1.png
-346234.00
+149403.15
 Bass
 images/2-bass/b1.png
-This is a guitar
+The Joe Dart II is the latest installment in the Joe Dart artist series
+
+signature bass collection. The Dart II offers a classic passive tone within
+
+a full-scale 34" package with its custom contoured body and simplified dual
+
+single-coil layout. The bass features a premium ash body, select maple neck,
+
+and passive split-coil pickups at the heart of its warm, punchy tonality.
+
+Dual volume controls are standard, but there are no tone controls to color
+
+the sound; therefore, the tone is manipulated solely by the user's technique
+
+and finesse. It is finished in Natural Velvet, comes with 21 frets and a
+
+custom artist series neckplate, and is tuned to E standard with custom gauge
+
+.045 - .105" Ernie Ball stainless steel roundwound wound bass strings.

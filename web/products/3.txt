@@ -1,9 +1,42 @@
 Fender Telecaster
-4.5
+4.28
 50
 76
 images/1-guitar/product-g3.png
-346234.00
+40000
 Guitar
 images/1-guitar/g3.png
-This is a guitar
+The archetypical Fender Telecaster is a solid-body electric guitar with 
+
+a flat asymmetric single-cutaway body; 
+
+the body is usually made from alder or ash. 
+
+The neck is usually made from maple and attached to the body with screws 
+
+and has a distinctive small headstock with six tuning pegs mounted inline 
+
+along a single side; the fingerboard may be maple or another wood, 
+
+e.g. rosewood, and has at least twenty-one frets. 
+
+
+The Telecaster's body is front-routed for electronics; 
+
+the bridge pickup is mounted in a metal plate 
+
+attached to the guitar's bridge, other pickups are mounted 
+
+in a plastic pickguard, and the controls are mounted 
+
+in a metal plate on the lower bout of the guitar. 
+
+Most Telecasters have two single-coil pickups, 
+
+a pickup selector switch, a single volume control 
+
+and a single tone control. Fixed bridges are almost universal, and the 
+
+original design has three individually adjustable dual-string saddles 
+
+whose height and intonation can be set independently. 

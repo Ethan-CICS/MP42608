@@ -10,22 +10,7 @@
         <link href="CSS/sidebar.css" rel="stylesheet"/>
     </head>
     <body>
-        <header>
-            <nav>
-                <img src="images/navbar/ApolloLogo.png" class="logo">
-                <ul class="nav-links">
-                    <li><a href="index.jsp">Home</a></li>
-                    <li><a href="about-us.jsp">About Us</a></li>
-                    <li><a href="products-main.jsp">Products</a></li>
-                    <li><a href="login.jsp">Login</a></li>
-                </ul>
-                <form>
-                    <img src="images/navbar/SearchIcon.png" class="searchIcon">
-                    <input type="text" placeholder="Search" class="searchBar">
-                    <input type="button" hidden />
-                    </form>
-            </nav>
-        </header>
+        <%@include file="navbar.jsp" %>
         <div class="content">
             <div class="sidebar">
                 <a href="products-guitar.jsp" class="guitar" id="sidebutton">Guitars</a>
@@ -38,62 +23,38 @@
             <div class="main-page">
                 <h1 id="main-title">Keyboards</h1>
                 <div class="products">
-                    <div class="product1" id="product-container">
-                        <a href="item-k1.jsp">
-                        <img
-                            alt="rolandkeyboard"
-                            src="images/4-keyboard/p1.png"
-                            class="product-image"
-                        />
-                        </a>
-                    </div>
-                    <div class="product2" id="product-container">
-                        <a href="blank error">
-                        <img
-                            alt="akai"
-                            src="images/4-keyboard/p2.png"
-                            class="product-image"
-                        />
-                        </a>
-                    </div>
-                    <div class="product3" id="product-container">
-                        <a href="blank error">
-                        <img
-                            alt="moog"
-                            src="images/4-keyboard/p3.png"
-                            class="product-image"
-                        />
-                        </a>
-                    </div>
-                    <div class="product4" id="product-container">
-                        <a href="blank error">
-                        <img
-                            alt="sequential"
-                            src="images/4-keyboard/p4.png"
-                            class="product-image"
-                        />
-                        </a>
-                    </div>
+                <%@page import="java.util.*"%>
+                <%@page import="model.Product"%>
+                <% 
+                    int products = 0;
+                    List<Product> productList = (ArrayList)request.getServletContext().getAttribute("productList");
+                    products = productList.size();
+                    for(int i = 0, j = 0; i < products; i++) {
+                        Product inst = productList.get(i);
+                        if(inst.getType().equals("Keyboard")) {
+                            j++;
+                            out.println("<div class=\"product" + Integer.toString(j) + "\" id=\"product-container\">");
+                            out.println("<a href=\"item.jsp?id=" + i + "\"> <img alt=\"guitar\" src= \"" + inst.getThumb() + " \"class=\"product-image\"/></a>");
+                            out.println("</div>");
+                        }
+                    }
+                %>
                 </div>
                 <div class="products-SMALL">
-                    <div class="product3-SMALL" id="product-container">
-                        <a href="blank error">
-                        <img
-                            alt="moog"
-                            src="images/4-keyboard/p3.png"
-                            class="product-image"
-                        />
-                        </a>
-                    </div>
-                    <div class="product4-SMALL" id="product-container">
-                        <a href="blank error">
-                        <img
-                            alt="sequential"
-                            src="images/4-keyboard/p4.png"
-                            class="product-image"
-                        />
-                        </a>
-                    </div>
+                     <%
+                        for(int i = 0, j = 0; i < products; i++) {
+                            Product inst = productList.get(i);
+                            if(inst.getType().equals("Keyboard")) {
+                                j++;
+                                if(j == 3 || j == 4) {
+                                    out.println("<div class=\"product" + j + "-SMALL\" id=\"product-container\">");
+                                    out.println("<a href=\"blank error\">");
+                                    out.println("<img alt=\"telecaster\" src=\"" + inst.getThumb() + "\" class=\"product-image\"/></a>");
+                                    out.println("</div>");
+                                }
+                            }
+                        }
+                    %>
                 </div>
             </div>
         </div>

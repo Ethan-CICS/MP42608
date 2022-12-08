@@ -1,0 +1,21 @@
+Sequential Prophet-5 V
+4.88
+123
+54
+images/4-keyboard/product-p4.png
+199197.50
+Keyboard
+images/4-keyboard/p4.png
+The Prophet-5 is an analog synthesizer manufactured by the 
+
+American company Sequential. It was designed by Dave Smith and 
+
+John Bowen in 1977, who used microprocessors, then a new technology, 
+
+to create the first polyphonic synthesizer with fully programmable memory. 
+
+This allowed users to store sounds and recall them instantly rather than having 
+
+to reprogram them manually; whereas synthesizers had once created unpredictable sounds, 
+
+the Prophet-5 moved synthesizers to producing "a standard package of familiar sounds

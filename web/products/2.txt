@@ -1,9 +1,43 @@
 Ibanez THBB10
-4.5
-50
+4.89
+112
 76
 images/1-guitar/product-g2.png
-346234.00
+83200
 Guitar
 images/1-guitar/g2.png
-This is a guitar
+The THBB10 is an AZ series solid body electric guitar model 
+
+introduced by Ibanez for 2019. 
+
+It is the first Ibanez signature model for American guitarist 
+
+Tim Henson of the instrumental rock band Polyphia. 
+
+It is produced in Indonesia as part of the mid-tier Premium line.
+
+
+The THBB10 features an American basswood body bolted to a one-piece 
+
+roasted maple neck with a roasted maple fingerboard with 
+
+24 stainless steel frets, acrylic & abalone split block 
+
+position markers and luminescent side dots. 
+
+Components include custom DiMarzio Notorious pickups mounted in a black 
+
+pickguard with a mini-humbucker at the bridge 
+
+and single-coils in the neck and middle positions, 
+
+a T1502 two-point synchronized tremolo bridge, 
+
+a Graph Tech TUSQ nut and an angled output jack. 
+
+
+It has Gotoh MG-T locking tuning machines with the thumb wheel 
+
+locking mechanism rather than the adjustable height H.A.P.M
+
+locking tuners which are on the other AZ guitars.
