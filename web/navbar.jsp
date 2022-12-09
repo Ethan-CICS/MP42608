@@ -22,7 +22,16 @@
                     <li><a href="index.jsp">Home</a></li>
                     <li><a href="about-us.jsp">About Us</a></li>
                     <li><a href="products-main.jsp">Products</a></li>
-                    <li><a href="login.jsp">Login</a></li>
+                    <%
+                    if(session.getAttribute("newUsername") == null) {
+                    
+                        out.println("<li><a href=\"login.jsp\">Login</a></li>");
+                    }
+                    else {
+                        out.println("<li><a href=\"LogoutServlet\">Logout</a></li>");
+                        out.println("<li><a>"+ session.getAttribute("newUsername") + "</a></li>");
+                        }
+                    %>
                 </ul>
                 <form>
                     <img src="images/navbar/SearchIcon.png" class="searchIcon">
