@@ -61,7 +61,6 @@ public class StartListener implements ServletContextListener {
                 br.close();
                 product = new Product(model, rating, reviews, stock, desc, image, price, type, thumb);
                 productList.add(product);
-                System.out.print(product.toString());
             } catch (FileNotFoundException fnfe){
                 System.out.print("File not Found");
             } catch (NullPointerException npe) {

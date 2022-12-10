@@ -40,7 +40,7 @@
                     }
                     else {
                         out.println("<li><a href=\"LogoutServlet\">Logout</a></li>");
-                        out.println("<li><a>"+ session.getAttribute("newUsername") + 
+                        out.println("<li><a href=\"cart.jsp\">"+ session.getAttribute("newUsername") + 
                         " <img src=\"https://www.pngkey.com/png/full/231-2317482_white-shopping-cart-png-download-buy-icon-white.png\" alt=\"star\" class=\"logo-cart\"></a></li>");
                         }
                     %>

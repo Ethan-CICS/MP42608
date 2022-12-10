@@ -100,9 +100,13 @@
                         out.println("<br />");
                     %>
                     <div class="item-buttton-container">
+                        <%
+                        out.println("<a href=\"ShoppingCart?id=" + index + "\">");
+                                %>
                         <div class="item-button">
                             <span class="item-button-text">Add To Cart</span>
                         </div>
+                        <% out.println("</a>"); %>
                 </div>
             </div>
     </body>

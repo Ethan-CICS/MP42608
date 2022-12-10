@@ -39,7 +39,7 @@
                 </ul>
             </div>
             <div class="profiles">
-                <img src="images/6-about-us/Lu.png" id="profile-img" class="img-center">
+                <img src="images/6-about-us/Lu.png" alt="Lu" id="profile-img" class="img-center">
                 <ul>
                     <li><b>Ethan Lu</b></li>
                     <li>Keyboardist</li>

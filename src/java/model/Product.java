@@ -20,6 +20,8 @@ public class Product {
     private String type;
     private String thumbnail;
     
+    public Product(){    
+    }
     public Product(String model, double rating, int reviews, int stock, String desc, String image, double price, String type, String thumbnail){
         this.model =  model;
         this.rating = rating;
