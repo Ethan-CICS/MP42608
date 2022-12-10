@@ -6,41 +6,42 @@ package controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.*;
 import javax.servlet.http.HttpSession;
-import model.*;
+import model.Product;
 
 /**
  *
  * @author ejlu1
  */
-@WebServlet(name = "ShoppingCart", urlPatterns = {"/ShoppingCart"})
-public class ShoppingCart extends HttpServlet {
-
+@WebServlet(name = "CheckoutServlet", urlPatterns = {"/CheckoutServlet"})
+public class CheckoutServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        int id = Integer.parseInt(request.getParameter("id"));
         HttpSession session = request.getSession();
-        String user = (String)session.getAttribute("newUsername");
-        List<Product> productList = (ArrayList)request.getServletContext().getAttribute("productList");
-        Product item = productList.get(id);
         List<Product> cartList = (ArrayList)request.getServletContext().getAttribute("cartList");
-        if(user != null) {
-            cartList.add(item);
-        }
+        cartList.removeAll(cartList);
+        session.setAttribute("cartList", cartList);
         response.sendRedirect("cart.jsp");
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+       
     }
+
+    @Override
+    public String getServletInfo() {
+        return "Short description";
+    }// </editor-fold>
+
 }

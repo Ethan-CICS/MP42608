@@ -19,6 +19,7 @@ public class StartListener implements ServletContextListener {
        ServletContext context = sce.getServletContext();
        try {
            setProducts(context);
+           createCart(context);
        } catch (IOException ioe) {
            System.out.print("Error Ocurred");
        }
@@ -72,4 +73,8 @@ public class StartListener implements ServletContextListener {
         }
         context.setAttribute("productList", productList);
     }
+   public void createCart(ServletContext context){
+       List<Product> cartList = new ArrayList<>();
+       context.setAttribute("cartList", cartList);
+   }
 }

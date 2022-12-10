@@ -31,13 +31,15 @@ body {
 .shopping-cart {
   position:relative;
   width: 750px;
-  height: 423px;
+  height: 500px;
   margin: 80px auto;
   background: #996600;
   box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
   border-radius: 6px;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .title {
@@ -53,11 +55,7 @@ body {
   padding: 20px 30px;
   height: 120px;
   display: flex;
-}
-
-.item:nth-child(3) {
-  border-top:  1px solid #E1E8EE;
-  border-bottom:  1px solid #E1E8EE;
+  font-size: 24px;
 }
 
 /* Buttons -  Delete and Like */
@@ -103,7 +101,9 @@ body {
 
 /* Product Image */
 .image {
-  margin-right: 50px;
+  margin-right: 20px;
+  margin-left: -40px;
+  
 }
 
 /* Product Description */
