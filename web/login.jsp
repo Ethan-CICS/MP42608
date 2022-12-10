@@ -9,9 +9,21 @@
         <link href="CSS/navbar.css" rel="stylesheet"/>
     </head>
     <body>
+        <% 
+            response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+            response.setHeader("Expires","0");
+            
+            if(session.getAttribute("newUsername") != null)
+            {
+                response.sendRedirect("index.jsp");
+            }
+            
+        %>
         <header>
             <nav>
+                <a href="index.jsp">
                 <img src="images/navbar/ApolloLogo.png" class="logo">
+                </a>
             </nav>
         </header>
         <div class="greetingBanner">
@@ -20,10 +32,10 @@
           <div class="container2">
             <form action="Login">
                 <label for="username" class="login-title">Username</label>
-                <input type="text" name="username" class="login-form"/><br/><br/>
+                <input type="text" name="username" class="login-form" required/><br/><br/>
                 
                 <label for="password" class="login-title"> Password </label>
-                <input type="password" name="password" class="login-form"><br/><br/>
+                <input type="password" name="password" class="login-form" required><br/><br/>
                 <div class="button-container">
                 <input class="button-design" type="submit" value="LOGIN">
                 </div>

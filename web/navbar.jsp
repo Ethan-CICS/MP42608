@@ -13,8 +13,19 @@
         <title>NavBar | Apollo Music Store</title>
         <link rel="icon" type="image/x-icon" href="images/ApolloLogoOnly.png"/>
         <link href="CSS/navbar.css" rel="stylesheet"/>
+        <link href="CSS/item.css" rel="stylehsset" />
     </head>
     <body>
+        <% 
+            response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+            response.setHeader("Expires","0");
+            
+            if(session.getAttribute("newUsername") != null)
+            {
+                ;
+            }
+            
+        %>
         <header>
             <nav>
                 <img src="images/navbar/ApolloLogo.png" class="logo">
@@ -29,7 +40,8 @@
                     }
                     else {
                         out.println("<li><a href=\"LogoutServlet\">Logout</a></li>");
-                        out.println("<li><a>"+ session.getAttribute("newUsername") + "</a></li>");
+                        out.println("<li><a>"+ session.getAttribute("newUsername") + 
+                        " <img src=\"https://www.pngkey.com/png/full/231-2317482_white-shopping-cart-png-download-buy-icon-white.png\" alt=\"star\" class=\"logo-cart\"></a></li>");
                         }
                     %>
                 </ul>

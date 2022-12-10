@@ -9,11 +9,19 @@
         <link href="CSS/navbar.css" rel="stylesheet"/>
     </head>
     <body>
+        
         <%@include file="navbar.jsp" %>
         <div class="greetingBanner">
-            <h1>Welcome to Apollo!</h1>
+            <%
+                if(session.getAttribute("newUsername") == null) {
+                    out.println("<h1>Welcome to Apollo!</h1>");
+                } else {
+                    out.println("<h1>Welcome to back to Apollo, " + session.getAttribute("newUsername") + "!</h1>");
+                }
+            
+            %>
             <div class="button-container">
-                <button type="submit" class="button-design">SHOP NOW</button>
+                <form action="products-main.jsp"><button type="submit" class="button-design">SHOP NOW</button></form>
             </div>
         </div>
     </body>
