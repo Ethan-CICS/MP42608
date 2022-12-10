@@ -15,17 +15,17 @@ public class StartListener implements ServletContextListener {
     
    @Override
    public void contextInitialized(ServletContextEvent sce) {
-       System.out.println("Test");
+       System.out.println("Server Started");
        ServletContext context = sce.getServletContext();
        try {
            setProducts(context);
        } catch (IOException ioe) {
-           System.out.print("lol");
+           System.out.print("Error Ocurred");
        }
    }
    @Override
    public void contextDestroyed(ServletContextEvent sce) {
-       System.out.println(":+1:");
+       System.out.println("Server Closed");
    }
    public void setProducts(ServletContext context) throws IOException {
         Product product;  
@@ -63,9 +63,9 @@ public class StartListener implements ServletContextListener {
                 productList.add(product);
                 System.out.print(product.toString());
             } catch (FileNotFoundException fnfe){
-                System.out.print("oof");
+                System.out.print("File not Found");
             } catch (NullPointerException npe) {
-                System.out.print("He would never ball");
+                System.out.print("NulPointerException ocurred");
             }
             ctr++;
             path = "/products/" + Integer.toString(ctr) + ".txt";
