@@ -18,7 +18,6 @@
                 <a href="products-drums.jsp" class="drums" id="sidebutton">Drums</a>
                 <a href="products-keyboard.jsp" class="keyboards" id="sidebutton">Keyboards</a>
                 <a href="products-amps.jsp" class="amplifiers" id="sidebutton">Amplifiers</a>
-                <a href="" class="accessories" id="sidebutton">Accessories</a>
             </div>
             <div class="main-page">
                 <h1 id="main-title">Products</h1>
